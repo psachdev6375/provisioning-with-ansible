@@ -5,7 +5,11 @@ Uses Ansible to provision the following:
 2. API Server with 4 microservices, Eureka service discovery and Zuul proxy configured as upstart services 
 
 Vagrant is used to provision VMs 
-1. ansiblecontroller VM which runs as the ansible controller machine 
-2. dbserver VM for database servers
-3. apiserver VM for apiservers 
+1. ansiblecontroller VM which runs as the ansible controller machine. Vagrant ansibleinstall.sh to install Ansible during provisioning. 
+2. dbserver VM for database servers. The base image contains MySQL already installed. 
+3. apiserver VM for apiservers. The base image already has Java 8 installed. 
+
+2 Ansible Roles: 
+1. "apiservers" 
+2. "dbservers" 
 
